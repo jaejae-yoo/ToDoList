@@ -1,3 +1,4 @@
+#queue를 활용하여 coffeshop 대기시간 관리
 import numpy as np
 import random
 

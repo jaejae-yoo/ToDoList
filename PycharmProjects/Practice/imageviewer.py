@@ -1,3 +1,5 @@
+#circlelinkedlist를 활용하여 자동으로 넘어가는 imageviewr 생성
+
 from tkinter import filedialog
 import tkinter as tk
 from PIL import ImageTk, Image
