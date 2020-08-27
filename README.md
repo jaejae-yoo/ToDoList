@@ -6,4 +6,4 @@ Source
 
 - https://github.com/ndb796/python-for-coding-test
 
-- Inha University Software Convergence Datastructure
+- Inha Univ Software Convergence Datastructure
