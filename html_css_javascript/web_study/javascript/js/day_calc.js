@@ -10,7 +10,6 @@ var passedTime = toNow - toFirst;
 var passedDay = Math.round(passedTime/(1000*60*60*24));
 document.querySelector("#accent").innerText = passedDay + "일";
 
-//함수 호출
 calcDate(100);
 calcDate(200);
 calcDate(365);
