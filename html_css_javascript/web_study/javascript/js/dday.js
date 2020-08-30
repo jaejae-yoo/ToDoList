@@ -1,3 +1,4 @@
+//사용자 입력
 var now = new Date();
 var meetday = prompt("처음 만날 날을 yyyy-mm-dd행태로 작성해주세요.");
 var firstDay = new Date(meetday);
