@@ -1,4 +1,3 @@
-// 사용자가 입력한 to do list를 기반으로 목표 달성률 표시
 var itemList = [];
 var count = 0; var do_count = 0; var result = 0;
 
