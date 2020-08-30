@@ -1,9 +1,9 @@
-# Practice
+# WEB_STUDY
 
-Source
+Study
 
-- Baekjoon Online Judge https://www.acmicpc.net/
+- css 
 
-- https://github.com/ndb796/python-for-coding-test
+- html
 
-- Inha Univ Software Convergence Datastructure
+- Javascript
