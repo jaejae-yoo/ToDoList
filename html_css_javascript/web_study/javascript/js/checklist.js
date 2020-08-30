@@ -1,17 +1,18 @@
+// 사용자가 입력한 to do list를 기반으로 목표 달성률 표시
+
 var itemList = [];
-var count = 0;
-var do_count = 0;
-var rresult = 0;
+var count = 0; var do_count = 0; var result = 0;
 
 var addBtn = document.querySelector("#add");
 addBtn.addEventListener("click", addList);
 
+//사용자가 add 클릭 시, itemList에 사용자의 입력 값을 저장
 function addList() {
     var item = document.querySelector("#item").value;
     if (item != null){
         itemList.push(item);
-        document.querySelector("#item").value = "";
-        document.querySelector("#item").focus();
+        document.querySelector("#item").value = ""; //add 클릭 이후에 기존 검색 창 초기화
+        document.querySelector("#item").focus();    //text field에 cursor
         count+=1;
         //console.log(count);
     }
@@ -28,17 +29,16 @@ function showList(){
     document.querySelector("#itemList").innerHTML = list;
     var remove = document.querySelectorAll(".close");
      for(var i=0; i<remove.length; i++){
-         remove[i].addEventListener("click", removeList);
+         remove[i].addEventListener("click", removeList);   //X 클릭
      }
-     document.querySelector('#showResult').innerHTML = "completion rate of today's goal " + rresult+" %";
+     document.querySelector('#showResult').innerHTML = "completion rate of today's goal " + result+" %"; //목표 달성률 표시
 }
 
 function removeList() {
     //console.log(this);
-    var id = this.getAttribute("id");
+    var id = this.getAttribute("id");           
     do_count+=1;
-    Math.round()
-    rresult = Math.round((do_count/count)*100);
-    itemList.splice(id, 1);
+    result = Math.round((do_count/count)*100);
+    itemList.splice(id, 1);            //X를 클릭한 index 삭제
     showList();
 }
