@@ -7,7 +7,6 @@ var toNow = now.getTime();
 var toFirst = firstDay.getTime();
 var passedTime = toNow - toFirst;
 
-//일 수 계산
 var passedDay = Math.round(passedTime/(1000*60*60*24));
 document.querySelector("#accent").innerText = passedDay + "일";
 
